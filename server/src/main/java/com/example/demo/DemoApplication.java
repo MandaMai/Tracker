@@ -16,7 +16,7 @@ public class DemoApplication {
 	@Bean
 	ApplicationRunner init(MusicRepository repository) {
 		return args -> {
-			Stream.of("Beatles", "Elton John", "My Chemical Romance", "N*Sync", "Motley Crue").forEach(name ->{
+			Stream.of("Beatles", "Elton John", "My Chemical Romance", "N*Sync", "Motley Crue", "Elvis").forEach(name ->{
 				Music music = new Music();
 				music.setName(name);
 				repository.save(music);

@@ -23,7 +23,7 @@ class FavoriteMusicController {
     }
 
     private boolean isFavorite(Music music) {
-        return !music.getName().equals("My Chemical Romance") &&
-            !music.getName().equals("Beatles");
+        return !music.getName().equals("Elvis") &&
+            !music.getName().equals("Billy Ray Cyrus");
     }
 }

@@ -8,6 +8,7 @@ import javax.persistence.Entity;
 
 @Entity
 @Data
+@NoArgsConstructor
 public class Music {
     @Id @GeneratedValue
     private Long id;

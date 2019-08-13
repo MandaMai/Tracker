@@ -1,5 +1,13 @@
-<h2>Music List</h2>
+<mat-card>
+  <mat-card-title>Music List</mat-card-title>
+  <mat-card-content>
+    <mat-list>
+      <mat-list-item *ngFor="let music of musics">
+        <img mat-list-avatar src="{{music.giphyUrl}}" alt="{{music.name}}">
+        <a mat-button [routerLink]="['/music-edit', music.id]">{{music.name}}</a>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
 
-<div *ngFor="let music of musics">
-  {{music.name}}
-</div>
+  <button mat-fab color="primary" [routerLink]="['/music-add']">Add</button>
+</mat-card>
